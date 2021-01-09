@@ -27,3 +27,5 @@ elif M>60:
         print(H,M)
     elif 0<H<24:
         print(H,M)
+else :
+    print(H, M)
