@@ -16,8 +16,8 @@ B=[0,0]
 while True:
     while True:
         c+=1
-        A[0]=0
-        A[1]=int(C[1])
+        A[0]=C[0]
+        A[1]=C[1]
         if b< 10:
             if (A[0]+A[1])>=10:
                 s=str(A[0]+A[1])
@@ -47,6 +47,14 @@ while True:
                 B[1]=int(s[1])
                 C[0]=B[0]
                 C[1]=B[1]
+                if int(str(B[0])+str(B[1]))==n:
+                    print(c)
+                    break
+                else:
+                    b=int(str(B[0])+str(B[1]))
+                    C[0]=B[0]
+                    C[1]=B[1]
+                    continue
                 b=int(str(B[0])+str(B[1]))
                 continue
             else:
